@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Projeto1</string>
+    <string name="link_imc">Projeto IMC</string>
+    <string name="link_media">Projeto Média</string>
+    <string name="link_nomes">Integrantes</string>
 </resources>
