@@ -7,6 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
@@ -68,7 +69,14 @@ class MediaActivity : AppCompatActivity() {
 
         val resultado: Float = list.sum() / list.size;
 
-        if(resultado >= 6) txtResultado.text = "Você está Aprovado. Parabéns!"
-         else txtResultado.text = "Você está reprovado."
+        if(resultado >= 6){
+
+            txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.holo_green_dark))
+            txtResultado.text = "Você está Aprovado. Parabéns!"
+        }
+         else{
+            txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_dark))
+             txtResultado.text = "Você está reprovado."
+        }
     }
 }
