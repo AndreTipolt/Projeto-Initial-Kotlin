@@ -34,8 +34,7 @@
         android:id="@+id/txtResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Você está"
-        android:textSize="40px"
+        android:textSize="50px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -88,7 +87,7 @@
         tools:layout_editor_absoluteX="-1dp" />
 
     <Button
-        android:id="@+id/Home"
+        android:id="@+id/btnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_voltar_home"

@@ -1,5 +1,6 @@
 package com.example.projeto1
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -25,9 +26,17 @@ class MediaActivity : AppCompatActivity() {
 
         val btnCalcular: Button = findViewById(R.id.btnCalcular)
 
+        val btnHome: Button = findViewById(R.id.btnHome);
+
         btnCalcular.setOnClickListener {
             calcularMedia()
+        };
+
+        btnHome.setOnClickListener {
+            voltarHome()
         }
+
+
     }
 
     fun calcularMedia() {
@@ -78,5 +87,12 @@ class MediaActivity : AppCompatActivity() {
             txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_dark))
              txtResultado.text = "Você está reprovado."
         }
+    }
+
+    fun voltarHome() {
+
+        val intent = Intent(this, MainActivity::class.java);
+
+        startActivity(intent);
     }
 }
