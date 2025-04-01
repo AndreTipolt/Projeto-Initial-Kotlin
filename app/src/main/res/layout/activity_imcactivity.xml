@@ -45,7 +45,8 @@
             android:id="@+id/txtAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_altura" />
+            android:hint="@string/hint_altura"
+            android:inputType="numberDecimal"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -61,7 +62,8 @@
             android:id="@+id/txtPeso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_peso" />
+            android:hint="@string/hint_peso"
+            android:inputType="numberDecimal"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
