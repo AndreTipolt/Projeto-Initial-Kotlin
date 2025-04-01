@@ -1,5 +1,9 @@
 <resources>
+
     <string name="app_name">Projeto1</string>
+
+    <string name="text_voltar_home">Voltar</string>
+
     <string name="link_imc">Projeto IMC</string>
     <string name="link_media">Projeto Média</string>
     <string name="link_nomes">Integrantes</string>
@@ -11,8 +15,12 @@
     <string name="hint_nota2">Nota 2</string>
     <string name="hint_nota3">Nota 3</string>
 
-    <string name="text_calcular_imc">Calcular</string>
+    <string name="hint_altura">Altura (em metros)</string>
+    <string name="hint_peso">Peso (em Kg)</string>
 
-    <string name="text_voltar_home">Voltar</string>
+
+    <string name="text_calcular_media">Calcular Média</string>
+    <string name="text_calcular_imc">Calcular IMC</string>
+
 
 </resources>
