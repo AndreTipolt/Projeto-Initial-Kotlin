@@ -5,6 +5,7 @@
     <string name="link_nomes">Integrantes</string>
 
     <string name="title_media">Cálculo de Média</string>
+    <string name="title_imc">Cálculo de IMC</string>
 
     <string name="hint_nota1">Nota 1</string>
     <string name="hint_nota2">Nota 2</string>

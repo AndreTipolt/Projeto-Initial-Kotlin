@@ -35,8 +35,6 @@ class MediaActivity : AppCompatActivity() {
         btnHome.setOnClickListener {
             voltarHome()
         }
-
-
     }
 
     fun calcularMedia() {
