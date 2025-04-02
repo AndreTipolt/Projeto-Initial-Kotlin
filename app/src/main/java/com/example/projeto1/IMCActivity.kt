@@ -7,6 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
@@ -53,6 +54,31 @@ class IMCActivity : AppCompatActivity() {
 
         val valorIMC: Float = peso / (altura * altura);
 
-        
+        when (valorIMC) {
+            in 0.0..18.4 -> {
+                txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.holo_blue_dark))
+                txtResultado.text = "Você está abaixo do peso"
+            }
+            in 18.5..24.9 -> {
+                txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.holo_green_dark))
+                txtResultado.text = "Você está com um IMC normal"
+            }
+            in 25.0..29.9 -> {
+                txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.holo_orange_dark))
+                txtResultado.text = "Você está com sobrepeso"
+            }
+            in 30.0..34.9 -> {
+                txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_light))
+                txtResultado.text = "Obesidade Grau I"
+            }
+            in 35.0..39.9 -> {
+                txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_dark))
+                txtResultado.text = "Obesidade Grau II (severa)"
+            }
+            else -> {
+                txtResultado.setTextColor(ContextCompat.getColor(this, android.R.color.black))
+                txtResultado.text = "Obesidade Grau III (mórbida)"
+            }
+        }
     }
 }
