@@ -1,7 +1,9 @@
 package com.example.projeto1
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -30,6 +32,8 @@ class IMCActivity : AppCompatActivity() {
 
     fun calcularIMC() {
 
+        val txtResultado: TextView = findViewById(R.id.txtResultadoIMC);
+
         val txtAltura = findViewById<TextInputEditText>(R.id.txtAltura);
         val txtPeso = findViewById<TextInputEditText>(R.id.txtPeso);
 
@@ -46,5 +50,9 @@ class IMCActivity : AppCompatActivity() {
             Toast.makeText(this, "Campos não podem ser 0", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        val valorIMC: Float = peso / (altura * altura);
+
+        
     }
 }
